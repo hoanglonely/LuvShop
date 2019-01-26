@@ -12,16 +12,21 @@ namespace LuvShop.Model.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         [Required]
+        [MaxLength(256)]
         public string Name { get; set; }
         [Required]
+        [MaxLength(256)]
         public string Alias { get; set; }
         public int CategoryID { get; set; }
+        [MaxLength(256)]
         public string Image { get; set; }
         public XElement MoreImages { get; set; }
         public decimal Price { get; set; }
         public decimal? PromotionPrice { get; set; } //Gia khuyen mai
         public int? Warranty { get; set; } //Bao hanh
+        [MaxLength(500)]
         public string Description { get; set; }
+        [MaxLength(256)]
         public string Content { get; set; }
 
         public bool? HomeFlag { get; set; }
