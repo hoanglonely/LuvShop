@@ -18,7 +18,7 @@ namespace LuvShop.Model.Models
         [Column(TypeName = "varchar")]
         public string Alias { get; set; }
         [Required]
-        public int CategoryId { get; set; }
+        public int CategoryID { get; set; }
         [MaxLength(256)]
         public string Image { get; set; }
         [MaxLength(500)]
