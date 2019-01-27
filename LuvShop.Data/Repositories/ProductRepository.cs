@@ -3,7 +3,7 @@ using LuvShop.Model.Models;
 
 namespace LuvShop.Data.Repositories
 {
-    public interface IProductRepository
+    public interface IProductRepository: IRepository<Product>
     {
     }
 
